@@ -1,6 +1,5 @@
 import BrowserFetchConnection from './browser-fetch'
 import CapacitorFetchConnection from './capacitor-http'
-import WebSocketProxyConnection from 'fetch-bypass-cors'
 
 /**
  * Helper class that mimics a `fetch` response.
@@ -25,8 +24,6 @@ export default function obtainFetchImplementation (mode, options) {
     return new BrowserFetchConnection(options)
   } else if (mode === 'capacitor') {
     return new CapacitorFetchConnection(options)
-  } else if (mode === 'websocket-proxy') {
-    return new WebSocketProxyConnection(options)
   } else {
     throw new Error(`Unknown fetch implementation: ${mode}`)
   }
