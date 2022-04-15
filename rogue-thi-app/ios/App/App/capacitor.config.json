@@ -1,0 +1,9 @@
+{
+	"appId": "app.neuland",
+	"appName": "neuland.app",
+	"webDir": "out",
+	"bundledWebRuntime": false,
+	"ios": {
+		"scheme": "neuland.app"
+	}
+}
