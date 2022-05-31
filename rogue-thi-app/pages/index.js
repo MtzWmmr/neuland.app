@@ -48,7 +48,8 @@ const ALL_THEMES = [
   { name: 'Retro', style: 'retro' },
   { name: 'Windows 95', style: '95' },
   { name: 'Pride', style: 'pride' },
-  { name: 'Hackerman', style: 'hacker', requiresToken: true }
+  { name: 'Hackerman', style: 'hacker', requiresToken: true },
+  { name: 'Fiori', style: 'fiori' }
 ]
 
 const PLATFORM_DESKTOP = 'desktop'
